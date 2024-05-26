@@ -42,37 +42,37 @@ document.getElementById('bai-tap-4-form').onsubmit = function() {
 }
 
 // Bài tập 5: Tìm số chẵn cuối cùng
-document.getElementById('bai-tap-4-form').onsubmit = function() {
+document.getElementById('bai-tap-5-form').onsubmit = function() {
     timSoChanCuoiCung();
     return false;
 }
 
 // Bài tập 6: Đổi chỗ
-document.getElementById('bai-tap-4-form').onsubmit = function() {
+document.getElementById('bai-tap-6-form').onsubmit = function() {
     doiCho();
     return false;
 }
 
 // Bài tập 7: Sắp xếp tăng dần
-document.getElementById('bai-tap-4-form').onsubmit = function() {
+document.getElementById('bai-tap-7-form').onsubmit = function() {
     sapXepTangDan();
     return false;
 }
 
 // Bài tập 8: Tìm số nguyên tố đầu tiên
-document.getElementById('bai-tap-4-form').onsubmit = function() {
+document.getElementById('bai-tap-8-form').onsubmit = function() {
     timSoNguyenToDauTien();
     return false;
 }
 
 // Bài tập 9: Đếm số nguyên
-document.getElementById('bai-tap-4-form').onsubmit = function() {
+document.getElementById('bai-tap-9-form').onsubmit = function() {
     demSoNguyen();
     return false;
 }
 
 // Bài tập 10: So sánh số lượng số âm và dương
-document.getElementById('bai-tap-4-form').onsubmit = function() {
+document.getElementById('bai-tap-10-form').onsubmit = function() {
     soSanhAmDuong();
     return false;
 }

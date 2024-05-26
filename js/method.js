@@ -143,7 +143,16 @@ export function sapXepTangDan() {
     if (!danhSachSo.length) {
         thongBao = `Vui lòng thêm số vào danh sách trước`;
     } else {
-        let ketQua = [];
+        let ketQua = danhSachSo;
+        for (let i = 0; i < danhSachSo.length; i++) {
+            for (let y = 0; y < danhSachSo.length - 1; y++) {
+                if (danhSachSo[y] > danhSachSo[y + 1]) {
+                    let tmp = danhSachSo[i];
+                    danhSachSo[i] = danhSachSo[y + 1];
+                    danhSachSo[y + 1] = tmp;
+                }
+            }
+        }
         thongBao = `Mảng sau khi sắp xếp: ${ketQua}`;
     }
     
@@ -221,7 +230,7 @@ function kiemTraSoNguyenTo(so) {
     if (so < 2) {
         return false;
     }
-    for (var i = 2; i <= Math.sqrt(so); i++) {
+    for (let i = 2; i <= Math.sqrt(so); i++) {
         if (so % i == 0) {
             return false;
         }
